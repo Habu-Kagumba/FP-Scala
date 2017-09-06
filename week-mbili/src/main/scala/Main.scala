@@ -1,10 +1,17 @@
 import examples._
 
 object Main extends App {
-  def testHigherOrder() =
-    printf("Ints: %d\n", HigherOrder.sumInts(2, 3))
-    printf("Cubes: %d\n", HigherOrder.sumCubes(2, 3))
-    printf("Factorials: %d\n", HigherOrder.sumFactorials(2, 3))
+  def factorial(x: Int): Int = if (x == 0) 1 else x * factorial(x - 1)
+  def fact(x: Int) = HigherOrderAndCurry.product(x => x)(1, x)
 
-  testHigherOrder()
+  def testHigherOrderAndCurry() =
+    printf("SumInts: %d\n", HigherOrderAndCurry.sum(x => x)(2, 3))
+    printf("SumCubes: %d\n", HigherOrderAndCurry.sum(x => x * x * x)(2, 3))
+    printf("SumFactorials: %d\n", HigherOrderAndCurry.sum(factorial)(2, 3))
+
+    printf("ProductInts: %d\n", HigherOrderAndCurry.product(x => x)(2, 3))
+    printf("ProductCubes: %d\n", HigherOrderAndCurry.product(x => x * x * x)(2, 3))
+    printf("ProductFactorials: %d\n", HigherOrderAndCurry.product(fact)(2, 3))
+
+  testHigherOrderAndCurry()
 }
