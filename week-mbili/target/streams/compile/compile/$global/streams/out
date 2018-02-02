@@ -1,4 +1,26 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/habu/Dev/Scala-code/FP-Scala/week-mbili/src/main/scala/Main.scala:15:3: not found: value testHigherOrder[0m
-[0m[[0m[31merror[0m] [0m[0m  testHigherOrder()[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/habu/Dev/Scala-code/FP-Scala/week-mbili/src/main/scala/examples/Examples.scala:23:7: not found: value nestedArray[0m
+[0m[[0m[31merror[0m] [0m[0m      nestedArray match {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/habu/Dev/Scala-code/FP-Scala/week-mbili/src/main/scala/examples/Examples.scala:24:54: not found: value flatArray[0m
+[0m[[0m[31merror[0m] [0m[0m        case (head: List[Any]) :: tail => loop(tail, flatArray ++ flattenArray(a))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/habu/Dev/Scala-code/FP-Scala/week-mbili/src/main/scala/examples/Examples.scala:24:80: not found: value a[0m
+[0m[[0m[31merror[0m] [0m[0m        case (head: List[Any]) :: tail => loop(tail, flatArray ++ flattenArray(a))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/habu/Dev/Scala-code/FP-Scala/week-mbili/src/main/scala/examples/Examples.scala:24:47: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
+[0m[[0m[31merror[0m] [0m[0m required: List[Int][0m
+[0m[[0m[31merror[0m] [0m[0m        case (head: List[Any]) :: tail => loop(tail, flatArray ++ flattenArray(a))[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/habu/Dev/Scala-code/FP-Scala/week-mbili/src/main/scala/examples/Examples.scala:25:48: not found: value flatArray[0m
+[0m[[0m[31merror[0m] [0m[0m        case (head: Int) :: tail => loop(tail, flatArray :+ i)[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/habu/Dev/Scala-code/FP-Scala/week-mbili/src/main/scala/examples/Examples.scala:25:61: not found: value i[0m
+[0m[[0m[31merror[0m] [0m[0m        case (head: Int) :: tail => loop(tail, flatArray :+ i)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/habu/Dev/Scala-code/FP-Scala/week-mbili/src/main/scala/examples/Examples.scala:25:41: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
+[0m[[0m[31merror[0m] [0m[0m required: List[Int][0m
+[0m[[0m[31merror[0m] [0m[0m        case (head: Int) :: tail => loop(tail, flatArray :+ i)[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m7 errors found[0m
